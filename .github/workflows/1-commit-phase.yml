@@ -13,4 +13,5 @@ jobs:
       - run: echo "pretending to run the tests"
       - run: echo "pretending to build"
   Trigger_Acceptance_Phase:
+    needs: [Test_and_build]
     uses: ./.github/workflows/2-acceptance-phase.yml
