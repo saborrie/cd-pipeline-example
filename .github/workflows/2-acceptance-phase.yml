@@ -9,8 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: sleep 30s
   Run_Acceptance_Tests:
     needs: [Update_Testing_Environment]
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: sleep 5m
