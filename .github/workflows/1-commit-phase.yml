@@ -9,9 +9,9 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
       - run: echo "pretending to run the tests"
-      - run: sleep 1m
+      - run: sleep 10s
       - run: echo "pretending to build"
-      - run: sleep 1m
+      - run: sleep 10s
   Trigger_Acceptance_Phase:
     needs: [Test_and_build]
     uses: ./.github/workflows/2-acceptance-phase.yml
