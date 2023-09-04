@@ -2,8 +2,6 @@ name: Commit Phase
 run-name: ${{ github.actor }} is running a pipeline
 on: [push]
 
-concurrency: commit_phase
-
 jobs:
   Test_and_build:
     runs-on: ubuntu-latest
