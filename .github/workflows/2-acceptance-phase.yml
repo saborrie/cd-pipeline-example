@@ -5,11 +5,11 @@ on: [workflow_dispatch, workflow_call]
 concurrency: testing_environment
 
 jobs:
-  Update Testing Environment:
+  Update_Testing_Environment:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-  Run Acceptance Tests:
+  Run_Acceptance_Tests:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
