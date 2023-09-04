@@ -1,6 +1,6 @@
 name: Acceptance Phase
 # run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [workflow_dispatch, workflow_call]
+on: [workflow_call]
 
 concurrency: testing_environment
 
