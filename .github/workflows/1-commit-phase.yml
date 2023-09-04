@@ -1,0 +1,16 @@
+name: Commit Phase
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+
+concurrency: commit_phase
+
+jobs:
+  Test and build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - run: echo "pretending to run the tests"
+      - run: echo "pretending to build"
+  Trigger Acceptance Phase:
+    uses: ./.github/workflows/2-acceptance-phase.yml
